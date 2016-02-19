@@ -1,0 +1,446 @@
+
+<template name="forms">
+    
+    <nav class="navbar navbar-default" id="top-navbar" data-toggle="tab">
+        <div class="container-fluid no-padding">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav tabs">
+                    <li role="presentation" class=""><a href="#thank_you" role="tab" data-toggle="tab" aria-expanded="true">פרטים נוספים</a></li>
+                    <li role="presentation" class=""><a href="#business" role="tab" data-toggle="tab" aria-expanded="false">פרטי העסק</a></li>
+                    <li role="presentation" class=""><a href="#prs-det" role="tab" data-toggle="tab" aria-expanded="false">פרטים אישיים</a></li>
+                    <li role="presentation" class="active"><a href="#register" role="tab" data-toggle="tab" aria-expanded="false">הרשמה</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="tab-content">
+
+        <!-- Registration  section -->
+        <div role="tabpanel" class="tab-pane register animated fadeInRight active" id="register">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="reg-text"><h3>אנא הזן את מספר הטלפון של נותן השירות</h3></div>
+
+                    <div class="form-group">
+                        <input type="text" style="text-align: center" class="brown-md-box" placeholder="טלפון">
+                    </div>
+                    <div class="form-group">
+                        <button id="btnNext" class="yelow-lg-btn btnNext">המשך</button>
+                    </div>
+
+            </div>
+        </div>
+        <!-- end section -->
+
+        <!-- personal details -->
+
+            <div role="tabpanel" class="tab-pane  animated fadeInRight" id="prs-det">
+                <div class="col-md-offset-3 col-md-6">
+                        <div class="form-group" id="lng-box">
+
+                            <select class="brown-md-box lng-box" dir="rtl">
+                                <option value="">Spanish</option>
+                                <option value="">French</option>
+                                <option value="">German</option>
+                                <option value="">Italian</option>
+                                <option value="">Chinese</option>
+                                <option value="">Tagalog</option>
+                                <option value="">Polish</option>
+                                <option value="">Korean</option>
+                                <option value="">Vietnamese</option>
+                                <option value="">Portuguese</option>
+                                <option value="">Japanese</option>
+                                <option value="">Greek</option>
+                                <option value="">Arabic</option>
+                                <option value="">Hindi (urdu)</option>
+                                <option value="">Russian</option>
+                                <option value="">Yiddish</option>
+                                <option value="">Thai (laotian)</option>
+                                <option value="">Persian</option>
+                                <option value="">French Creole</option>
+                                <option value="">Armenian</option>
+                                <option value="">Navaho</option>
+                                <option value="">Hungarian</option>
+                                <option value="">Hebrew</option>
+                                <option value="">Dutch</option>
+                                <option value="">Mon-khmer (cambodian)</option>
+                                <option value="">Gujarathi</option>
+                                <option value="">Ukrainian</option>
+                                <option value="">Czech</option>
+                                <option value="">Pennsylvania Dutch</option>
+                                <option value="">Miao (hmong)</option>
+                                <option value="">Norwegian</option>
+                                <option value="">Slovak</option>
+                                <option value="">Swedish</option>
+                                <option value="">Serbocroatian</option>
+                                <option value="">Kru</option>
+                                <option value="">Rumanian</option>
+                                <option value="">Lithuanian</option>
+                                <option value="">Finnish</option>
+                                <option value="">Panjabi</option>
+                                <option value="">Formosan</option>
+                                <option value="">Croatian</option>
+                                <option value="">Turkish</option>
+                                <option value="">Ilocano</option>
+                                <option value="">Bengali</option>
+                                <option value="">Danish</option>
+                                <option value="">Syriac</option>
+                                <option value="">Samoan</option>
+                                <option value="">Malayalam</option>
+                                <option value="">Cajun</option>
+                                <option value="">Amharic</option>
+                            </select>
+
+                        </div>
+
+                        <div class="separate">
+                        <div class="form-group">
+                            <input type="text" name="surname" id="surname" class="brown-md-box" placeholder="">
+                            <input type="text" name="name" id="name" class="brown-md-box" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <span data-toggle="buttons">
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="male" id="male">Male
+                            </label>
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="female" id="female">Female
+                            </label>
+                            </span>
+                            <input type="date" name="brtday" id="brtday" class="brown-md-box">
+                        </div>
+                        </div>
+
+                        <div class="separate">
+                        <div class="form-group">
+                            <input type="text" name="phone-1" id="phone-1" class="brown-md-box" placeholder="">
+                            <input type="text" name="phone-2" id="phone-2" class="brown-md-box" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="email" id="email" class="brown-lg-box" placeholder="">
+                        </div>
+                        </div>
+
+                        <div class="separate">
+                        <div class="form-group">
+                            <input type="text" name="street-num" id="street-num" class="brown-sm-box" placeholder="">
+                            <input type="text" name="street" id="street" class="brown-sm-box" placeholder="">
+                            <input type="text" name="apartment " id="apartment " class="brown-md-box" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <button class=" yelow-sm-btn" id="zip-code">Post Code</button>
+                            <input type="text" name="code" id="code" class="brown-sm-box" placeholder="">
+                            <select name="city " id="city " class="brown-md-box" dir="rtl">
+                                <option></option>
+                            </select>
+                        </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button id="prs-det-cont" class="yelow-lg-btn btnNext">המשך</button>
+                        </div>
+                </div>
+            </div>
+
+        <!-- end section -->
+
+        <!-- business details -->
+        <div role="tabpanel" class="tab-pane  animated fadeInRight" id="business">
+            <div class="col-md-offset-2 col-md-8" id="buss_det">
+
+                    <div class="form-group" id="buss_fileds">
+                        <input type="text" class="brown-md-box" id="buss_name">
+                        <input type="text" class="brown-md-box" id="buss_num">
+                    </div>
+                    <div id="accord_menu">
+                    <nav class="navbar navbar-default" id="secondary_navbar" data-toggle="tab" aria-expanded="false">
+                        <div class="container-fluid no-padding">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#Navbar">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="collapse navbar-collapse" id="Navbar">
+                                <ul class="nav navbar-nav">
+                                    <li role="presentation"><a href="#" role="tab" data-toggle="tab" aria-expanded="false">פרטים נוספים</a></li>
+                                    <li role="presentation"><a href="#" role="tab" data-toggle="tab" aria-expanded="false">פרטי העסק</a></li>
+                                    <li role="presentation"><a href="#" role="tab" data-toggle="tab" aria-expanded="false">פרטים אישיים</a></li>
+                                    <li role="presentation"><a href="#" role="tab" data-toggle="tab" aria-expanded="false">הרשמה</a></li>
+                                    <li role="presentation"><a href="#tab2" role="tab" data-toggle="tab" aria-expanded="false">הרשמה</a></li>
+                                    <li role="presentation" class="active"><a href="#tab1" role="tab" data-toggle="tab" aria-expanded="false">הרשמה</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="form-group" id="acordion">
+                        <div class="panel-group" id="accordion">
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane  active animated fadeInRight" id="tab1">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" dir="rtl">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                    Collapsible Group Item #1
+                                                <i class="indicator glyphicon glyphicon-chevron-down  pull-left"></i><div id="count1" style="float: left"></div>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse in">
+                                            <div class="panel-body" dir="rtl">
+                                                <ul>
+                                                    <li><input id="option1" type="checkbox" value=""><label for="option1">Post</label></li>
+                                                    <li><input id="option2" type="checkbox" value=""><label for="option2">Post</label></li>
+                                                    <li><input id="option3" type="checkbox" value=""><label for="option3">Post</label></li>
+                                                    <li><input id="option4" type="checkbox" value=""><label for="option4">Post</label></li>
+                                                    <li><input id="option5" type="checkbox" value=""><label for="option5">Post</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" dir="rtl">
+                                            <h4 class="panel-title">
+                                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                    Collapsible Group Item #2
+                                                    <i class="indicator glyphicon glyphicon-chevron-right  pull-left"></i><div id="count2" style="float: left"></div>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse ">
+                                            <div class="panel-body" dir="rtl">
+                                                <ul>
+                                                    <li><input id="option6" type="checkbox" value=""><label for="option6">Post</label></li>
+                                                    <li><input id="option7" type="checkbox" value=""><label for="option7">Post</label></li>
+                                                    <li><input id="option8" type="checkbox" value=""><label for="option8">Post</label></li>
+                                                    <li><input id="option9" type="checkbox" value=""><label for="option9">Post</label></li>
+                                                    <li><input id="option10" type="checkbox" value=""><label for="option10">Post</label></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane  animated fadeInRight" id="tab2">
+                                 Post
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btnNext yelow-lg-btn" id="buss_yellow_btn">Continue</button>
+                    </div>
+            </div>
+
+
+        </div>
+        <!-- end section -->
+
+        <div role="tabpanel" class="tab-pane" id="thank_you" style="font-family: 'Open Sans Hebrew', sans-serif">
+            <div role="tabpanel" class="tab-pane  animated fadeInRight">
+                <div class="col-md-offset-2 col-md-8" dir="rtl" style="text-align: right">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <select class="brown-sm-box"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <span data-toggle="buttons">
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">Yes
+                            </label>
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">No
+                            </label>
+                            </span>
+                            <input type="text" class="brown-md-box">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <select class="brown-md-box"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <select class="brown-md-box"></select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <a data-toggle="collapse" href="#collapse_dark" aria-expanded="false" aria-controls="collapseExample"><button class="yelow-sm-btn">Next</button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse col-md-12" id="collapse_dark">
+                    <div class="well clearfix">
+                        <div class="col-md-offset-3 col-md-6">
+                           <div class="form-group" style="margin-top: 30px;">
+                                <select class="brown-md-box lst_select" dir="rtl" style="color: white;">
+                                    <option>Next</option>
+                                </select>
+                                <span data-toggle="buttons">
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Yes
+                                    </label>
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Yes
+                                    </label>
+                                </span>
+                           </div>
+                            <div class="form-group">
+                                <select class="brown-md-box lst_select" dir="rtl" style="color: white">
+                                    <option>Next</option>
+                                </select>
+                                 <span data-toggle="buttons">
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Yes
+                                    </label>
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Yes
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <span data-toggle="buttons">
+                                    <label class="btn  brown-sm-btn dark_brown_btn" style="margin-right: 3px; ">
+                                        <input type="radio" value="">Post
+                                    </label>
+                                    <label class="btn  brown-sm-btn dark_brown_btn">
+                                        <input type="radio" value="">Post
+                                    </label>
+                                </span>
+
+                                 <span data-toggle="buttons">
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Yes
+                                    </label>
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">yes
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="form-group">
+                                <button class="yelow-lg-btn yelow-lg-btn-last">Next</button>
+                                <span data-toggle="buttons">
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Post
+                                    </label>
+                                    <label class="btn  brown-sm-btn">
+                                        <input type="radio" value="">Post
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-offset-2 col-md-8" dir="rtl" style="text-align: right">
+                    <div class="col-md-8">
+                        <div class="form-group">
+                             <span data-toggle="buttons">
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">Yes
+                            </label>
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">No
+                            </label>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                             <span data-toggle="buttons">
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">Yes
+                            </label>
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">No
+                            </label>
+                            </span>
+                            <input type="text" class="brown-md-box">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="form-group">
+                             <span data-toggle="buttons">
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">Yes
+                            </label>
+                            <label class="btn  brown-sm-btn">
+                                <input type="radio" value="">No
+                            </label>
+                            </span>
+                            <input type="text" class="brown-md-box">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Post Post Post</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                             <textarea class="form-control" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8" id="submit">
+                        <a href="/finishPage"><button class="yelow-lg-btn">Continue</button></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+</template>
